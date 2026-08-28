@@ -7,4 +7,10 @@ requires-python = ">=3.11"
 dependencies = [
     "ipykernel>=7.3.0",
     "openai>=3.1.0",
+    "yfinance>=1.7.0",
+]
+
+[tool.uv.workspace]
+members = [
+    "3.AgentsIntro/yahoo_demo",
 ]

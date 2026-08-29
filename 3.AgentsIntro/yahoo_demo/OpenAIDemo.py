@@ -43,6 +43,7 @@ response = client.chat.completions.create(
             "content": "What is Apple's stock ticker?",
         }
     ],
+    
     max_tokens=200,
 )
 

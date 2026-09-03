@@ -29,7 +29,7 @@ def select_provider() -> Provider:
     raise RuntimeError(f"No provider found")
 
 
-def client_and_model() -> tuple[OpenAI, str, Provider]:
+def get_client_and_model() -> tuple[OpenAI, str, Provider]:
     provider = select_provider()
     api_key = os.getenv(provider.env_var)
     if provider.base_url is None:
